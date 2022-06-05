@@ -7,7 +7,7 @@ const replies = {
 const getResponse = (newUserMessage, lastUserMessage) => {
     let action = null;
     let value = null;
-    if (lastUserMessage == unitCode && isInterval(newUserMessage)){
+    if (lastUserMessage == "update" && isInterval(newUserMessage)){
         return {
             message: `Thank-you! Your tasks this month include:`,
             options: [{action: action, value: value}]
